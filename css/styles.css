@@ -107,6 +107,7 @@ h6 {
 .list {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 /* ------------------------------------------------ */
@@ -163,21 +164,35 @@ header .link:focus {
 
 .hero .subtitle {
   color: var(--hero-subtitle-color);
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .hero .title {
   font-size: 72px;
   line-height: 1.18;
   color: var(--page-white-color);
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .hero .text {
   color: var(--hero-text-color);
+  margin: 0;
+  width: 360px;
 }
 
 .hero .link:hover,
-.hero.link:focus {
+.hero .link:focus {
   color: var(--accent-color);
+}
+
+.hero-list {
+  display: flex;
+}
+
+.hero-list .item + .item {
+margin-left: 40px;
 }
 
 /* о нас */
