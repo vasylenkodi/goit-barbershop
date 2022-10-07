@@ -19,121 +19,171 @@ hero text color #9DA4BD */
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-
   background-color: var(--page-white-color);
 }
 
-/* заголовки */
+/* Утилиты */
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 42px;
-  letter-spacing: 0.05em;
-  color: var(--secondary-text-color);
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
+address {
+  font-style: normal;
 }
-
-/* ссылки */
-
-.link {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
-  color: var(--secondary-text-color);
-}
-
-/* подзаголовок */
-
-.subtitle {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-}
-
-/* акцент */
 
 .accent {
   color: var(--accent-color);
 }
 
-/* кнопки */
-
-.button {
-  box-sizing: border-box;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--page-white-color);
-  padding: 12px 20px;
-  border-radius: 25px;
-  border: 1px solid var(--accent-color);
-  background-color: transparent;
-  min-width: 160px;
-  cursor: pointer;
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
-.button.secondary {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* заголовки */
+
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
+}
+
+.title.primary {
   color: var(--secondary-text-color);
 }
 
-.button:hover,
-.button:focus {
-  background-color: var(--accent-color);
+.title.secondary {
   color: var(--page-white-color);
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.subtitle.primary {
+  color: var(--secondary-text-color);
+}
+
+.subtitle.secondary {
+  color: var(--hero-subtitle-color);
 }
 
 /* списки */
 
 .list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
-/* ------------------------------------------------ */
+/* ссылки */
+
+.link {
+  text-decoration: none;
+}
+
+.social-media {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  color: var(--secondary-text-color);
+}
+
+.social-media:hover,
+.social-media:focus {
+  color: var(--accent-color);
+}
+
+/* кнопки */
+
+.button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  padding: 12px 20px;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  cursor: pointer;
+  min-width: 160px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--page-white-color);
+  background-color: var(--accent-color);
+}
+
+.button.primary {
+  color: var(--page-white-color);
+}
+
+.button.secondary {
+  color: var(--secondary-text-color);
+}
+
 /* хедер */
 
-.header {
-  background: rgba(25, 28, 38, 0.2);
+header {
+  margin-bottom: -120px;
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
+.logo {
+  padding: 32px 0;
 }
 
 header .link {
-  display: inline-block;
+  font-weight: 600;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: calc(16 / 12);
   letter-spacing: 0.1em;
   color: var(--page-white-color);
-  padding-bottom: 20px;
+  display: inline-block;
   padding-top: 20px;
-}
-
-.container > .link {
-  margin-left: auto;
+  padding-bottom: 20px;
 }
 
 header .link:hover,
@@ -144,7 +194,6 @@ header .link:focus {
 .navigation-list {
   display: flex;
   align-items: center;
-  padding: 0;
   margin-left: 131px;
 }
 
@@ -152,135 +201,190 @@ header .link:focus {
   margin-left: 30px;
 }
 
-.container > .button {
-  margin-left: 40px;
+.container.flex {
+  display: flex;
+  align-items: center;
+}
+
+header .contact {
+  text-transform: uppercase;
+  margin-right: 40px;
+  margin-left: 254px;
 }
 
 /* герой */
 
 .hero {
-  background: rgba(25, 28, 38, 0.2);
+  background-color: rgba(25, 28, 38, 0.2);
+  padding-top: 120px;
 }
 
-.hero .subtitle {
-  color: var(--hero-subtitle-color);
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.hero .title {
+.hero-title.title {
   font-size: 72px;
-  line-height: 1.18;
+  line-height: calc(85 / 72);
   color: var(--page-white-color);
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
 .hero .text {
+  line-height: 1.67;
   color: var(--hero-text-color);
-  margin: 0;
-  width: 360px;
-}
-
-.hero .link:hover,
-.hero .link:focus {
-  color: var(--accent-color);
 }
 
 .hero-list {
   display: flex;
 }
+/* секция about */
 
-.hero-list .item + .item {
-margin-left: 40px;
+.about .title {
+  margin-bottom: 20px;
 }
-
-/* о нас */
 
 .about .text {
-  font-size: 14px;
   line-height: 1.86;
+  margin-bottom: 20px;
 }
 
-/* прайслист */
+.about .text.secondary {
+  font-size: 14px;
+  margin-bottom: 42px;
+}
 
-.prices .subtitle {
-  color: var(--hero-subtitle-color);
+.about-list {
+  display: flex;
+  gap: 30px;
+  margin-right: 30px;
+}
+
+.about-description {
+  margin-right: 100px;
+}
+
+/* секция с прайс-листом */
+
+.prices {
+  background-color: rgba(25, 28, 38, 0.2);
 }
 
 .prices .title {
-  color: var(--page-white-color);
+  margin-bottom: 44px;
+}
+
+.prices-content {
+  display: flex;
+  gap: 30px;
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
 }
 
 .price-list {
+  width: 570px;
+}
+
+.price-list .text {
+  font-size: 18px;
+  line-height: 1.67;
   color: var(--hero-text-color);
 }
 
-/* наши особенности */
+.price {
+  text-align: right;
+}
 
-.features {
+.prices .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 44px;
+}
+
+/* секция features */
+
+.features .container {
+  padding-left: 115px;
+  padding-right: 85px;
+}
+
+.features-list li p:first-of-type {
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.36;
+  line-height: calc(57 / 42);
+  text-align: center;
   letter-spacing: 0.05em;
   color: var(--secondary-text-color);
 }
 
-.features .text {
+.features-list .text {
   font-weight: 600;
   font-size: 11px;
-  line-height: 1.36;
+  line-height: calc(15 / 11);
   text-align: center;
   color: var(--secondary-text-color);
 }
 
-/* наши барберы */
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 130px;
+  gap: 30px;
+}
+
+.features-item {
+  width: 170px;
+  padding: 20px 24px;
+  background: #F7F7F7;
+}
+
+.features-text {
+  line-height: 1.67;
+}
+
+/* секция с барберами */
+
+.barbers {
+  background-color: #f7f7f7;
+}
 
 .name {
-  font-weight: 400;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: calc(25 / 18);
   text-align: center;
-  letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
 
-.barbers-list .description {
+.barbers .description {
   font-size: 14px;
-  line-height: 1.36;
+  line-height: calc(19 / 14);
   text-align: center;
-  letter-spacing: 0.02em;
 }
 
 /* галерея */
 
-/* контактные данные */
-
-.contacts .title {
-  color: var(--page-white-color);
+.gallery .subtitle {
+  margin-bottom: 44px;
 }
 
-.contacts .list,
-.contacts .text {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: var(--hero-text-color);
+/* контакты */
+
+.contacts {
+  background-color: rgba(25, 28, 38, 0.2);
 }
 
-.contacts .adress {
+address .address.link {
   font-weight: 700;
 }
 
-.contacts .email {
+address .link,
+.contacts .text {
+  font-weight: 400;
+  line-height: 1.67;
+  color: var(--hero-text-color);
+}
+
+address .email {
   text-decoration: underline;
 }
 
-.contacts .subtitle {
-  color: var(--page-white-color);
-}
-
-footer .link:hover,
-footer .link:focus {
-  color: var(--accent-color);
-}
+/* футер */
