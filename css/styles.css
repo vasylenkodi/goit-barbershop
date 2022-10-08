@@ -337,6 +337,11 @@ header .contact {
   background: #F7F7F7;
 }
 
+
+.features .title {
+  margin-bottom: 20px;
+}
+
 .features-text {
   line-height: 1.67;
 }
@@ -347,11 +352,28 @@ header .contact {
   background-color: #f7f7f7;
 }
 
+.barbers-list {
+  display: flex;
+}
+
+.barbers-card {
+  width: calc((100% - (2*30))/3);
+}
+
+.barbers-list .barbers-card + .barbers-card {
+  margin-left: 30px;
+}
+
+.barbers-card .card-footer {
+  padding-top: 30px;
+}
+
 .name {
   font-size: 18px;
   line-height: calc(25 / 18);
   text-align: center;
   color: var(--secondary-text-color);
+  margin-bottom: 8px;
 }
 
 .barbers .description {
@@ -364,6 +386,14 @@ header .contact {
 
 .gallery .subtitle {
   margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+}
+
+.gallery-list .gallery-item + .gallery-item {
+  margin-left: 30px;
 }
 
 /* контакты */
@@ -388,3 +418,20 @@ address .email {
 }
 
 /* футер */
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-list {
+  display: flex;
+  gap: 40px;
+}
+
+footer .social-media {
+  display: inline-block;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
