@@ -502,6 +502,36 @@ header .contact {
   text-align: center;
 }
 
+.barbers .social-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.barbers .social-item + .social-item {
+  margin-left: 10px;
+}
+
+.barbers .social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: var(--page-white-color);
+  color: var(--secondary-text-color);
+
+}
+
+.barbers .social-link:hover {
+  color: var(--accent-color);
+}
+
+.barbers .social-icon {
+  fill: currentColor;
+}
+
 /* галерея */
 
 .gallery .subtitle {
