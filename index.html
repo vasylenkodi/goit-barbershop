@@ -337,27 +337,41 @@
       <!-- Контактные данные -->
       <section class="contacts">
         <div class="container">
-          <h2 class="title secondary">Contacts</h2>
-          <address>
-            <ul class="list">
-              <li>
-                <a
-                  href="https://goo.gl/maps/bxQH1zRuzXtXM3hw7"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  class="address link"
-                  >st. Vasilkivska, 7A<br />
-                  Kyiv, 08132</a
-                >
-              </li>
-              <li><a href="tel:+380441111111" class="link">+38 044 111 11 11</a></li>
-              <li>
-                <a href="mailto:barbershop@email.com" class="link email">barbershop@email.com</a>
-              </li>
-            </ul>
-          </address>
+          <form class="contact-form" name="booking">
+            <h2 class="title secondary" id="form-header">Online-booking</h2>
+            <div class="contact-group" aria-labelledby="form-header">
+              <input class="input" type="text" name="name" placeholder="Name*">
+              <input class="input" type="tel" name="tel" placeholder="Phone*">
+              <label class="message-label">
+                Message
+                <textarea class="input message" name="message" rows="1"></textarea>
+              </label>
+              <button type="submit" class="button primary">send</button>
+            </div>
+          </form>
+          <div class="contacts-information">
+            <h2 class="title secondary">Contacts</h2>
+            <address>
+              <ul class="list">
+                <li>
+                  <a
+                    href="https://goo.gl/maps/bxQH1zRuzXtXM3hw7"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    class="address link"
+                    >st. Vasilkivska, 7A<br />
+                    Kyiv, 08132</a
+                  >
+                </li>
+                <li><a href="tel:+380441111111" class="link"> +38 044 111 11 11</a></li>
+                <li>
+                  <a href="mailto:barbershop@email.com" class="link email">barbershop@email.com</a>
+                </li>
+              </ul>
+            </address>
           <p class="subtitle">Working hours</p>
           <p class="text">Every day from 9:00 to 22:00</p>
+          </div>
         </div>
       </section>
     </main>

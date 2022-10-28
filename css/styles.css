@@ -549,7 +549,93 @@ header .contact {
 /* контакты */
 
 .contacts {
-  background-color: rgba(25, 28, 38, 0.2);
+  background-color: #191C26;
+}
+
+.contacts .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.contacts .contact-form {
+  width: calc(50% + 15px);
+}
+
+.contacts .contact-group {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 30px;
+}
+
+.contacts .input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  width: calc((100% - 30px)/2);
+ 
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15/11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--page-white-color);
+
+
+  padding: 8px 0;
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+
+.contacts .input:hover,
+.contacts .input:focus {
+  border-color: var(--page-white-color);
+}
+
+.contacts .input::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.contacts .input:hover::placeholder,
+.contacts .input:focus::placeholder {
+  color: var(--page-white-color);
+}
+
+.contacts .input + input {
+  margin-left: 30px;
+}
+
+.contacts .message-label {
+  width: 100%;
+  margin-bottom: 28px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15/11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.contacts .message-label:hover {
+  color: var(--page-white-color);
+}
+
+.contacts .message-label:focus-within {
+  color: var(--page-white-color);
+}
+
+.contacts .input.message {
+  resize: none;
+  display: block;
+  width: 100%;
+  margin-top: 0;
+}
+
+.contacts .contacts-information {
+  padding-left: 100px;
+  padding-top: 130px;
+  padding-bottom: 120px;
+  flex-grow: 1;
 }
 
 address .address.link {
