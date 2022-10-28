@@ -348,11 +348,11 @@ header .contact {
 }
 
 .price-list:first-child {
-  background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .price-list:last-child {
-  background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .price-item .text:first-child {
@@ -402,13 +402,22 @@ header .contact {
   align-items: flex-start;
 }
 
-.features-list li p:first-of-type {
+.features-list .features-item p:first-of-type {
   font-weight: 700;
   font-size: 42px;
   line-height: calc(57 / 42);
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--secondary-text-color);
+}
+
+.features-list .features-item p:first-of-type::after {
+  content: '+';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: calc(22/16);
+  color: var(--accent-color);
+  vertical-align: text-top;
 }
 
 .features-list .text {
