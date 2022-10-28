@@ -177,8 +177,8 @@ img {
 
 /* хедер */
 
-header {
-  margin-bottom: -120px;
+.header {
+  background-color: transparent;
 }
 
 .logo {
@@ -211,7 +211,11 @@ header .link:focus {
   margin-left: 30px;
 }
 
-.container.flex {
+.header-thumb.flex {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
   display: flex;
   align-items: center;
 }
@@ -224,15 +228,30 @@ header .contact {
 
 /* герой */
 
-.hero {
-  padding-top: 120px;
-  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url('../images/image-hero-background.jpg');
-  background-size: cover;
-  width: 1225px;
+.hero .container {
+  position: relative;
   height: 680px;
-  margin: 0 auto;
-  background-position: 155px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.slider {
+  position: relative;
+
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url('../images/image-hero-background.jpg');
+  background-size: cover;
+  width: 1070px;
+  height: 680px;
   background-repeat: no-repeat;
+}
+
+.hero-thumb {
+  position: absolute;
+  top: 272px;
+  left: 100px;
+
+  width: 444px;
 }
 
 .hero-title.title {
@@ -246,10 +265,21 @@ header .contact {
   color: var(--hero-text-color);
 }
 
+.hero-sidebar {
+  width: 100px;
+  position: relative;
+}
+
 .hero-list {
+  position: absolute;
+  bottom: 40px;
+  left: 27px;
+
   display: flex;
   align-items: center;
   gap: 40px;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
 }
 
 .hero-list::before {
@@ -260,6 +290,11 @@ header .contact {
   background-color: var(--secondary-text-color);
 }
 /* секция about */
+
+.container.flex {
+  display: flex;
+  align-items: center;
+}
 
 .about .title {
   margin-bottom: 20px;
@@ -289,6 +324,9 @@ header .contact {
 
 .prices {
   background-color: rgba(25, 28, 38, 0.2);
+  max-width: 1600px;
+  max-height: 692px;
+  background-image: url('../images/image-prices-background.png'), linear-gradient(#111319, #111319);
 }
 
 .prices .title {
@@ -302,11 +340,38 @@ header .contact {
 
 .price-item {
   display: flex;
-  justify-content: space-between;
+  gap: 12px;
+}
+
+.price-list .price-item + .price-item {
+  margin-top: 20px;
+}
+
+.price-list:first-child {
+  background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.price-list:last-child {
+  background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.price-item .text:first-child {
+  display: flex;
+  flex-grow: 1;
+  align-items: baseline;
+}
+
+.price-item .text:first-child::after {
+  content: '';
+  height: 1px;
+  background-color: var(--hero-subtitle-color);
+  flex-grow: 1;
+  margin-left: 12px;
 }
 
 .price-list {
   width: 570px;
+  padding: 30px 21px;
 }
 
 .price-list .text {
