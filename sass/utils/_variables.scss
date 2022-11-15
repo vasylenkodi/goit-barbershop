@@ -10,10 +10,12 @@ $colors: (
   'secondary-subtitle-color': rgba(157, 164, 189, 0.6),
   'page-footer-secondary-text-color': #FFFFFF,
   'navigation-links-color': #FFFFFF,
+  'mobile-logo-color': #FFFFFF,
   'primary-button-text-color': #FFFFFF,
   'primary-bg-color': #ffffff,
   'secondary-bg-color': #191c26,
   'hero-bg-overlay-color': rgba(25, 28, 38, 0.2),
+  'page-header-backdrop-bg-color': rgba(25, 28, 38, 0.2),
 );
 
 @function getColor($key) {
@@ -162,11 +164,11 @@ $timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
 
 %secondarySubtitleFont {
     font-family: 'Open Sans';
-font-weight: 600;
-font-size: 11px;
-line-height: 1.36;
-text-transform: uppercase;
-color: getColor('secondary-subtitle-color');
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: getColor('secondary-subtitle-color');
 }
 
 %page-footerSubtitleFont {

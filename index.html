@@ -17,21 +17,50 @@
   </head>
   <body>
     <!-- Хедер страницы -->
-    <header class="header">
-      <div class="container">
-        <div class="header-thumb flex">
-          <a href="./index.html" class="logo"><img src="./images/Logo.svg" alt="" /></a>
-          <nav class="navigation list">
-            <ul class="navigation-list list">
-              <li class="navigation-item"><a href="" class="link">About</a></li>
-              <li class="navigation-item"><a href="" class="link">Services and prices</a></li>
-              <li class="navigation-item"><a href="" class="link">Barbers</a></li>
-              <li class="navigation-item"><a href="" class="link">Contacts</a></li>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a href="./index.html" class="logo"><img src="./images/Logo.svg" alt="" /></a>
+        <div class="menu-container-backdrop js-menu-container" id="mobile-menu">
+          <div class="menu-container">
+            <nav class="site-navigation">
+              <ul class="site-navigation__list">
+                <li class="site-navigation__item">
+                  <a href="" class="site-navigation__link">About</a>
+                </li>
+                <li class="site-navigation__item">
+                  <a href="" class="site-navigation__link">Services and prices</a>
+                </li>
+                <li class="site-navigation__item">
+                  <a href="" class="site-navigation__link">Barbers</a>
+                </li>
+                <li class="site-navigation__item">
+                  <a href="" class="site-navigation__link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="tel:+380441111111" class="page-header__contact">+38 044 111 11 11</a>
+            <button class="button button--primary" type="button">Online-booking</button>
+            <ul class="social-media-list social-media-list__menu-container">
+              <li class="social-media-list"></li>
+              <li class="social-media-list"></li>
             </ul>
-          </nav>
-          <a href="tel:+380441111111" class="link contact">+38 044 111 11 11</a>
-          <button class="button primary" type="button">Online-booking</button>
+            <button type="button" class="menu-toggle js-close-menu">
+              <svg class="page-header__icon-menu-close" width="18.67" height="18.67">
+                <use href="./images/icons.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="page-header__icon-burger" width="24" height="16">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- уникальный контент страницы -->
@@ -196,8 +225,7 @@
                     <a href="" class="link social-link" aria-label="Instagram">
                       <span class="visually-hidden">Instagram</span>
                       <svg class="social-icon" width="20" height="20">
-                        <use href="./images/icons.svg#icon-instagram">
-                        </use>
+                        <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
@@ -205,24 +233,24 @@
                     <a href="" class="link social-link" aria-label="twitter">
                       <span class="visually-hidden">Twitter</span>
                       <svg class="social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="social-item">
                     <a href="" class="link social-link" aria-label="Facebook">
                       <span class="visually-hidden">Facebook</span>
                       <svg class="social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="social-item">
                     <a href="" class="link social-link" aria-label="Linkedin">
                       <span class="visually-hidden">LinkedIn</span>
                       <svg class="social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -238,32 +266,32 @@
                     <a href="" class="link social-link" aria-label="Instagram">
                       <span class="visually-hidden">Instagram</span>
                       <svg class="social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="social-item">
                     <a href="" class="link social-link" aria-label="twitter">
                       <span class="visually-hidden">Twitter</span>
                       <svg class="social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="social-item">
                     <a href="" class="link social-link">
                       <span class="visually-hidden">Facebook</span>
                       <svg class="social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="social-item">
                     <a href="" class="link social-link" aria-label="Linkedin">
                       <span class="visually-hidden">LinkedIn</span>
                       <svg class="social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -279,32 +307,32 @@
                     <a href="" class="link social-link" aria-label="Instagram">
                       <span class="visually-hidden">Instagram</span>
                       <svg class="social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram"></use>
-                    </svg>
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="social-item">
                     <a href="" class="link social-link" aria-label="twitter">
                       <span class="visually-hidden">Twitter</span>
                       <svg class="social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter"></use>
-                    </svg>
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="social-item">
                     <a href="" class="link social-link">
                       <span class="visually-hidden">Facebook</span>
                       <svg class="social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook"></use>
-                    </svg>
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
                     </a>
                   </li>
                   <li class="social-item">
                     <a href="" class="link social-link" aria-label="Linkedin">
                       <span class="visually-hidden">LinkedIn</span>
                       <svg class="social-icon" width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin"></use>
-                    </svg>
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
                     </a>
                   </li>
                 </ul>
@@ -340,8 +368,8 @@
           <form class="contact-form" name="booking">
             <h2 class="title secondary" id="form-header">Online-booking</h2>
             <div class="contact-group" aria-labelledby="form-header">
-              <input class="input" type="text" name="name" placeholder="Name*">
-              <input class="input" type="tel" name="tel" placeholder="Phone*">
+              <input class="input" type="text" name="name" placeholder="Name*" />
+              <input class="input" type="tel" name="tel" placeholder="Phone*" />
               <label class="message-label">
                 Message
                 <textarea class="input message" name="message" rows="1"></textarea>
@@ -369,8 +397,8 @@
                 </li>
               </ul>
             </address>
-          <p class="subtitle">Working hours</p>
-          <p class="text">Every day from 9:00 to 22:00</p>
+            <p class="subtitle">Working hours</p>
+            <p class="text">Every day from 9:00 to 22:00</p>
           </div>
         </div>
       </section>
