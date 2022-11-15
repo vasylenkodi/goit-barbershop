@@ -1,0 +1,21 @@
+.button {
+    padding: 12px 20px;
+    background-color: transparent;
+    border: 1px solid getColor('accent-color');
+    min-width: 160px;
+    text-align: center;
+
+    transition: background-color 250ms $timingFunction, color 250ms $timingFunction;
+    &:hover, &:focus {
+        background-color: getColor('accent-color');
+        color: getColor('primary-button-text-color');
+    }
+}
+
+.button--primary {
+    @extend %primaryButtonFont;
+}
+
+.button--secondary {
+    @extend %secondaryButtonFont;
+}
