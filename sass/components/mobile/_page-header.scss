@@ -85,3 +85,19 @@
         margin-bottom: 24px;
     }
 }
+
+.social-media-list {
+    @extend %list;
+}
+
+.social-media-list::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: getColor('secondary-text-color');
+    margin-right: 40px;
+}
+
+.social-media-list__item--column:not(:last-child) {
+    margin-bottom: 24px;
+}
