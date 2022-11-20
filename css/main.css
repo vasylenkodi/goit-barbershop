@@ -268,6 +268,21 @@ summary {
   }
 }
 
+.social-media-list__link {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+@media screen and (min-width: 768px) {
+  .social-media-list__link {
+    font-size: 11px;
+    line-height: 1.36;
+  }
+}
+
 .button--primary {
   font-family: "Open Sans";
   font-weight: 600;
@@ -288,7 +303,7 @@ summary {
   color: #303030;
 }
 
-.page-header__contact, .site-navigation__link {
+.social-media-list__link, .page-header__contact, .site-navigation__link {
   text-decoration: none;
   color: inherit;
 }
@@ -297,6 +312,18 @@ summary {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.page-header__icon-menu-close, .page-header__icon-burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container {
@@ -326,12 +353,26 @@ summary {
   border: 1px solid #ff6c00;
   min-width: 160px;
   text-align: center;
+  border-radius: 25px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover, .button:focus {
   background-color: #ff6c00;
   color: #FFFFFF;
+}
+
+.menu-toggle {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.menu-toggle.js-close-menu {
+  position: absolute;
+  top: 48px;
+  right: 31px;
 }
 
 .page-header {
@@ -348,6 +389,9 @@ summary {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -388,6 +432,7 @@ summary {
     height: 100%;
     width: 70%;
     padding: 118px 40px;
+    background-color: #ffffff;
   }
 }
 
@@ -412,6 +457,7 @@ summary {
 }
 
 .page-header__contact {
+  display: inline-block;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -424,14 +470,35 @@ summary {
   }
 }
 
-.social-media-list::before {
+.social-media-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-header__social-media-list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-header__social-media-list::before {
   content: "";
+  display: inline-block;
   width: 60px;
   height: 1px;
   background-color: #303030;
   margin-right: 40px;
 }
 
-.social-media-list__item--column:not(:last-child) {
-  margin-bottom: 24px;
+.social-media-list__item--column:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.social-media-list__item--column:not(:first-child) {
+  margin-top: 24px;
 }/*# sourceMappingURL=main.css.map */

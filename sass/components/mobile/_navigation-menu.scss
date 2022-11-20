@@ -1,0 +1,109 @@
+.menu-container-backdrop {
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: getColor('page-header-backdrop-bg-color');
+        transform: translateX(100%);
+
+    transition: transform 250ms $timingFunction;
+    }
+}
+
+.menu-container-backdrop.is-open {
+    @media screen and (max-width: 767px) {
+        transform: translateX(0);
+    }
+}
+
+.menu-container {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 70%;
+        padding: 118px 40px;
+        background-color: getColor('primary-bg-color');
+    }
+}
+
+.site-navigation {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 64px;
+    }
+}
+
+.site-navigation__list {
+    @extend %list;
+}
+
+.site-navigation__item:not(:first-child) {
+    @media screen and (max-width: 767px) {
+        margin-top: 24px;
+    }
+}
+
+.site-navigation__link {
+    @extend %navigationFont;
+    @extend %link;
+
+    transition: color 250ms $timingFunction;
+    &:hover, &:focus {
+        color: getColor('accent-color');
+    }
+}
+
+.page-header__contact {
+    @extend %navigationFont;
+    @extend %link;
+
+    display: inline-block;
+    transition: color 250ms $timingFunction;
+    &:hover, &:focus {
+        color: getColor('accent-color');
+    }
+    @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+    }
+}
+
+.social-media-list {
+    @extend %list;
+    display: flex;
+}
+
+.page-header__social-media-list {
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.page-header__social-media-list::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: getColor('secondary-text-color');
+    margin-right: 40px;
+}
+
+
+.social-media-list__item--column:first-child {
+    flex-grow: 1;
+}
+
+.social-media-list__item--column:not(:first-child) {
+    margin-top: 24px;
+}
+
+.social-media-list__link {
+    @extend %link;
+    @extend %page-headerSocial-mediaFont;
+}
+
+.page-header__icon-menu-close {
+    @extend %centered-flex;
+}

@@ -4,6 +4,7 @@
     border: 1px solid getColor('accent-color');
     min-width: 160px;
     text-align: center;
+    border-radius: 25px;
 
     transition: background-color 250ms $timingFunction, color 250ms $timingFunction;
     &:hover, &:focus {
@@ -18,4 +19,17 @@
 
 .button--secondary {
     @extend %secondaryButtonFont;
+}
+
+.menu-toggle {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+.menu-toggle.js-close-menu {
+    position: absolute;
+    top: 48px;
+    right: 31px;
 }
