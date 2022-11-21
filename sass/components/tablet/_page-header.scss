@@ -1,0 +1,12 @@
+.page-header__container {
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+    }
+}
+
+.logo {
+    @media screen and (min-width: $tablet) {
+        fill: getColor('primary-logo-color');
+        margin-right: 60px; 
+    }
+}

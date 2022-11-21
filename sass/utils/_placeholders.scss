@@ -18,7 +18,9 @@
 .container {
     padding: 0 15px;
     margin: 0 auto;
-    max-width: 450px;
+    @media screen and (max-width: 479px) {
+        max-width: 450px;
+    }
     @media screen and (min-width: $mobile) {
         width: 450px;
     }

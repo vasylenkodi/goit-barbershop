@@ -2,19 +2,19 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: transparent;
+    width: 100%;
+    background-color: #ccc;
 }
 
 .page-header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 128px;
 }
 
 .logo {
     fill: getColor('mobile-logo-color');
-    padding-top: 40px;
-    padding-bottom: 40px;
 }
 
 .page-header__icon-burger {

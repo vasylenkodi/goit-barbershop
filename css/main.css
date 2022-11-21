@@ -314,7 +314,7 @@ summary {
   list-style: none;
 }
 
-.page-header__icon-menu-close, .page-header__icon-burger {
+.page-header__icon-menu-close, .page-header__icon-burger, .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,7 +329,11 @@ summary {
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  max-width: 450px;
+}
+@media screen and (max-width: 479px) {
+  .container {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -375,11 +379,16 @@ summary {
   right: 31px;
 }
 
+.logo {
+  fill: #FFFFFF;
+}
+
 .page-header {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: transparent;
+  width: 100%;
+  background-color: #ccc;
 }
 
 .page-header__container {
@@ -392,12 +401,11 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 128px;
 }
 
 .logo {
   fill: #FFFFFF;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -501,4 +509,75 @@ summary {
 
 .social-media-list__item--column:not(:first-child) {
   margin-top: 24px;
+}
+
+.page-header__icon-burger {
+  fill: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    fill: #303030;
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-navigation {
+    margin-right: 46px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.page-header__contact {
+  display: inline-block;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.page-header__contact:hover, .page-header__contact:focus {
+  color: #ff6c00;
+}
+@media screen and (max-width: 767px) {
+  .page-header__contact {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__social-media-list {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

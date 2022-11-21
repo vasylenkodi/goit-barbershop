@@ -1,0 +1,4 @@
+.logo {
+    fill: getColor('mobile-logo-color');
+    @extend %centered-flex;
+}
