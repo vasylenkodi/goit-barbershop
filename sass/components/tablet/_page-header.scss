@@ -1,12 +1,12 @@
-.page-header__container {
-    @media screen and (min-width: $tablet) {
-        justify-content: center;
-    }
+.page-header {
+  @media screen and (min-width: $tablet) {
+    min-height: 120px;
+    padding-top: 32px;
+  }
 }
 
-.logo {
+.page-header__container {
     @media screen and (min-width: $tablet) {
-        fill: getColor('primary-logo-color');
-        margin-right: 60px; 
+        justify-content: flex-start;
     }
 }

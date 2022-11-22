@@ -1,0 +1,17 @@
+.social-media-list {
+    display: flex;
+    align-items: center;
+}
+
+.social-media-list::before {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 60px;
+    margin-right: 40px;
+    background-color: getColor('secondary-text-color');
+}
+
+.social-media-list__link {
+    @extend %link;
+}

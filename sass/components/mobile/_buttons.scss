@@ -1,35 +1,43 @@
 .button {
-    padding: 12px 20px;
-    background-color: transparent;
-    border: 1px solid getColor('accent-color');
-    min-width: 160px;
-    text-align: center;
-    border-radius: 25px;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 1px solid getColor('accent-color');
+  min-width: 160px;
+  text-align: center;
+  border-radius: 25px;
+  cursor: pointer;
 
-    transition: background-color 250ms $timingFunction, color 250ms $timingFunction;
-    &:hover, &:focus {
-        background-color: getColor('accent-color');
-        color: getColor('primary-button-text-color');
-    }
+  transition: background-color 250ms $timingFunction, color 250ms $timingFunction;
+  &:hover,
+  &:focus {
+    background-color: getColor('accent-color');
+    color: getColor('primary-button-text-color');
+  }
 }
 
 .button--primary {
-    @extend %primaryButtonFont;
+  @extend %primaryButtonFont;
 }
 
 .button--secondary {
-    @extend %secondaryButtonFont;
+  @extend %secondaryButtonFont;
+}
+
+.menu-container__button {
+  @media screen and (max-width: 767px) {
+    color: getColor('secondary-text-color');
+  }
 }
 
 .menu-toggle {
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
 }
 
 .menu-toggle.js-close-menu {
-    position: absolute;
-    top: 48px;
-    right: 31px;
+  position: absolute;
+  top: 48px;
+  right: 31px;
 }

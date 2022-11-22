@@ -1,0 +1,33 @@
+.menu-container-backdrop {
+    @media screen and (min-width: $desktop) {
+        margin-left: 131px;
+    }
+}
+
+.menu-container {
+    @media screen and (min-width: $desktop) {
+        align-items: center;
+    }
+}
+
+.site-navigation {
+}
+
+.site-navigation__list {
+    @media screen and (min-width: $desktop) {
+        gap: 30px;
+    }
+}
+
+.page-header__thumb {
+
+}
+
+.page-header__contact {
+    @media screen and (min-width: $desktop) {
+        margin-right: 40px;
+    }
+}
+
+.menu-container__button {
+}

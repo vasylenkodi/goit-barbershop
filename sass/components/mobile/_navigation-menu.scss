@@ -40,75 +40,63 @@
     @extend %list;
 }
 
-.site-navigation__item:not(:first-child) {
-    @media screen and (max-width: 767px) {
-        margin-top: 24px;
-    }
-}
-
-.site-navigation__link {
-    @extend %navigationFont;
-    @extend %link;
-
-    transition: color 250ms $timingFunction;
-    &:hover, &:focus {
-        color: getColor('accent-color');
-    }
-}
-
-.page-header__contact {
-    @extend %navigationFont;
-    @extend %link;
-
-    display: inline-block;
-    transition: color 250ms $timingFunction;
-    &:hover, &:focus {
-        color: getColor('accent-color');
-    }
+.site-navigation__item:not(:last-child) {
     @media screen and (max-width: 767px) {
         margin-bottom: 24px;
     }
 }
 
-.social-media-list {
-    @extend %list;
-    display: flex;
+.site-navigation__link {
+    @extend %link;
+    @extend %navigationFont;
+
+    transition: color 250ms $timingFunction;
+
+    &:hover, &:focus {
+        color: getColor('accent-color');
+    }
+}
+
+
+
+.page-header__contact {
+    @extend %link;
+    @extend %navigationFont;
+    display: inline-block;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+    }
+
+    transition: color 250ms $timingFunction;
+
+    &:hover, &:focus {
+        color: getColor('accent-color');
+    }
+
 }
 
 .page-header__social-media-list {
+    @extend %list;
+    margin-top: 64px;
     flex-wrap: wrap;
-    align-items: center;
-
+    max-width: 195px;
 }
-
-.page-header__social-media-list::before {
-    content: '';
-    display: inline-block;
-    width: 60px;
-    height: 1px;
-    background-color: getColor('secondary-text-color');
-    margin-right: 40px;
-}
-
 
 .social-media-list__item--column:first-child {
     flex-grow: 1;
 }
 
 .social-media-list__item--column:not(:first-child) {
+    padding-left: 100px;
     margin-top: 24px;
 }
 
-.social-media-list__link {
-    @extend %link;
+.social-media-list__link--column {
     @extend %page-headerSocial-mediaFont;
-}
+    
+    transition: color 250ms $timingFunction;
 
-.page-header__icon-menu-close {
-    @extend %centered-flex;
-}
-
-.page-header__icon-burger {
-    fill: getColor('mobile-logo-color');
-    @extend %centered-flex;
+    &:hover, &:focus {
+        color: getColor('accent-color');
+    }
 }

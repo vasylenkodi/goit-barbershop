@@ -1,0 +1,11 @@
+.logo {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        align-self: flex-start;
+    }
+}
+
+.logo-icon {
+    @media screen and (min-width: $tablet) {
+        fill: getColor('secondary-text-color');
+    }
+}

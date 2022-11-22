@@ -4,19 +4,16 @@
     left: 0;
     width: 100%;
     background-color: #ccc;
+    min-height: 136px;
+    padding-top: 40px;
 }
 
 .page-header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 128px;
-}
-
-.logo {
-    fill: getColor('mobile-logo-color');
 }
 
 .page-header__icon-burger {
-    @extend %centered-flex;
+    fill: getColor('mobile-logo-color');
 }
