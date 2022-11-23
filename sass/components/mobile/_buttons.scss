@@ -15,6 +15,11 @@
   }
 }
 
+.button--centered {
+  display: block;
+  margin: 0 auto;
+}
+
 .button--primary {
   @extend %primaryButtonFont;
 }

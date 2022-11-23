@@ -1,0 +1,27 @@
+.prices {
+    @media screen and (min-width: $tablet) {
+        background-image: url('../images/prices-background-image-tablet.png'), linear-gradient(getColor('prices-bg-color'), getColor('prices-bg-color'));
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: $tablet) {
+  .prices {
+    background-image: url('../images/prices-background-image-tablet@2x.png'), linear-gradient(getColor('prices-bg-color'), getColor('prices-bg-color'));
+  }
+}
+
+.pricelist {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        padding: 32px 40px;
+    }
+}
+
+.pricelist-service::after {
+    @media screen and (min-width: $tablet) {
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+}

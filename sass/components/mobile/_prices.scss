@@ -1,0 +1,68 @@
+.prices {
+    background-image: url('../images/prices-background-image-mobile.png'), linear-gradient(getColor('prices-bg-color'), getColor('prices-bg-color'));
+    @extend %background-image-position;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .prices {
+    background-image: url('../images/prices-background-image-mobile@2x.png'), linear-gradient(getColor('prices-bg-color'), getColor('prices-bg-color'));
+  }
+}
+
+.prices__title {
+    @extend %tertiaryTitleFont;
+    margin-top: 20px;
+    margin-bottom: 44px;
+}
+
+.pricelist {
+    @media screen and (max-width: 1199px) {
+        padding: 30px 20px 30px 40px;
+        background-image: linear-gradient(180deg, getColor('price-list-bg-color-start') 0%, getColor('price-list-bg-color-end') 100%);      
+    } 
+    margin-bottom: 44px; 
+}
+
+.pricelist__list {
+    @extend %list;
+}
+
+.pricelist__list:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+}
+
+.pricelist__item {
+    display: flex;
+}
+
+.pricelist__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.pricelist-service {
+    @extend %listTextFont;
+    display: flex;
+    align-items: baseline;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.pricelist-service::after {
+    content: '';
+    display: inline-block;
+    flex-grow: 1;
+    height: 1px;
+    margin-right: 4px;
+    margin-left: 4px;
+    background-color: getColor('price-list-pseudo-element-bg-color');
+}
+
+.pricelist-price {
+    @extend %listTextFont;
+    margin: 0;
+}

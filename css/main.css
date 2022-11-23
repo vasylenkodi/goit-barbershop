@@ -302,6 +302,20 @@ summary {
   }
 }
 
+.prices__title {
+  font-family: "Raleway";
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .prices__title {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+
 .hero__title {
   font-family: "Raleway";
   font-size: 48px;
@@ -379,6 +393,20 @@ summary {
   }
 }
 
+.pricelist-price, .pricelist-service {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+@media screen and (min-width: 768px) {
+  .pricelist-price, .pricelist-service {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
 .button--primary {
   font-family: "Open Sans";
   font-weight: 600;
@@ -403,13 +431,13 @@ summary {
   text-decoration: none;
 }
 
-.about-list, .page-header__social-media-list, .site-navigation__list, .social-media-list {
+.about-list, .pricelist__list, .page-header__social-media-list, .site-navigation__list, .social-media-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.hero {
+.prices, .hero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -474,6 +502,11 @@ img {
 .button:hover, .button:focus {
   background-color: #ff6c00;
   color: #FFFFFF;
+}
+
+.button--centered {
+  display: block;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -718,6 +751,78 @@ img {
   margin-bottom: 40px;
 }
 
+.prices {
+  background-image: url("../images/prices-background-image-mobile.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+  background-image: url("../images/prices-background-image-mobile.png"), linear-gradient(#111319, #111319);
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .prices {
+    background-image: url("../images/prices-background-image-mobile@2x.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url("../images/prices-background-image-mobile@2x.png"), linear-gradient(#111319, #111319);
+  }
+}
+.prices__title {
+  margin-top: 20px;
+  margin-bottom: 44px;
+}
+
+.pricelist {
+  margin-bottom: 44px;
+}
+@media screen and (max-width: 1199px) {
+  .pricelist {
+    padding: 30px 20px 30px 40px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#171A24), to(rgba(23, 26, 36, 0.2)));
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .pricelist__list:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.pricelist__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pricelist__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.pricelist-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0;
+}
+
+.pricelist-service::after {
+  content: "";
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 1px;
+  margin-right: 4px;
+  margin-left: 4px;
+  background-color: rgba(157, 164, 189, 0.12);
+}
+
+.pricelist-price {
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -894,6 +999,32 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .prices {
+    background-image: url("../images/prices-background-image-tablet.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url("../images/prices-background-image-tablet.png"), linear-gradient(#111319, #111319);
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
+  .prices {
+    background-image: url("../images/prices-background-image-tablet@2x.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url("../images/prices-background-image-tablet@2x.png"), linear-gradient(#111319, #111319);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .pricelist {
+    padding: 32px 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .pricelist-service::after {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .menu-container-backdrop {
     margin-left: 131px;
@@ -977,5 +1108,50 @@ img {
 @media screen and (min-width: 1200px) {
   .about__text-main {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .prices {
+    background-image: url("../images/prices-background-image-desktop.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url("../images/prices-background-image-desktop.png"), linear-gradient(#111319, #111319);
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), (min-resolution: 2dppx) and (min-width: 1200px) {
+  .prices {
+    background-image: url("../images/prices-background-image-desktop@2x.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url("../images/prices-background-image-desktop@2x.png"), linear-gradient(#111319, #111319);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pricelist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pricelist__list {
+    width: calc((100% - 30px) / 2);
+    padding: 30px 20px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#090B13), to(rgba(9, 11, 19, 0.2)));
+    background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pricelist__list:nth-child(2n+1) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#171A24), to(rgba(23, 26, 36, 0.2)));
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .pricelist__list:nth-child(2n) {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#090B13), to(rgba(9, 11, 19, 0.2)));
+    background-image: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }/*# sourceMappingURL=main.css.map */
