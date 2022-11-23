@@ -1,0 +1,33 @@
+.hero {
+    background-image: linear-gradient(getColor('hero-bg-overlay-color'), getColor('hero-bg-overlay-color')), url('../images/hero-background-image-mobile.jpg');
+    min-height: 580px;
+    @extend %background-image-position;
+    @media screen and (max-width: 767px) {
+        padding: 208px 82px 208px 0;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(getColor('hero-bg-overlay-color'), getColor('hero-bg-overlay-color')), url('../images/hero-background-image-mobile@2x.jpg');
+  }
+}
+
+.hero__title {
+    @extend %heroTitleFont;
+    margin: 20px 0;
+}
+
+.hero__text {
+    @extend %heroTextFont;
+    margin: 0;
+}
+
+.social-media-list__hero {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}

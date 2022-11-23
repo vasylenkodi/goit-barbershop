@@ -17,6 +17,7 @@ $colors: (
   'secondary-bg-color': #191c26,
   'hero-bg-overlay-color': rgba(25, 28, 38, 0.2),
   'page-header-backdrop-bg-color': rgba(25, 28, 38, 0.2),
+  'social-media-list-before-bg-color': #303030,
 );
 
 @function getColor($key) {
@@ -57,7 +58,7 @@ $timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
   color: getColor('primary-text-color');
 }
 
-%heroTextColor {
+%heroTextFont {
     font-family: 'Open Sans';
     font-size: 16px;
     line-height: 1.62;

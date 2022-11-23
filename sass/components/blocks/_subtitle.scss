@@ -1,0 +1,25 @@
+.subtitle {
+    margin: 0;
+}
+
+.subtitle::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+    vertical-align: super;
+    margin-right: 20px;
+}
+
+.subtitle--primary {
+    @extend %primarySubtitleFont;
+}
+
+.hero__subtitle {
+    @extend %heroSubtitleFont;
+}
+
+.subtitle--secondary {
+    @extend %secondarySubtitleFont;
+}

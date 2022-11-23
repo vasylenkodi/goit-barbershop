@@ -1,0 +1,29 @@
+.hero {
+    @media screen and (min-width: $desktop) {
+        background-image: linear-gradient(getColor('hero-bg-overlay-color'), getColor('hero-bg-overlay-color')), url('../images/hero-background-image-desktop.jpg');
+        width: 1170px;
+        background-position: 100px 0;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: $desktop) {
+  .hero {
+    background-image: linear-gradient(getColor('hero-bg-overlay-color'), getColor('hero-bg-overlay-color')), url('../images/hero-background-image-desktop@2x.jpg');
+  }
+}
+
+.hero__thumb {
+    @media screen and (min-width: $desktop) {
+        left: 200px;
+        width: 444px;
+    }
+}
+
+.hero-sidebar {
+    @media screen and (min-width: $desktop) {
+        width: 100px; 
+    }
+}
