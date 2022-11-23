@@ -1,0 +1,29 @@
+.about-list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.about-list__item {
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 30px)/2);
+  }
+}
+
+.about-list__item:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+        margin-right: 30px;
+    }
+}
+
+.about__description {
+    @media screen and (min-width: $desktop) {
+        width: 470px;
+    }
+}
+
+.about__text-main {
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
+}

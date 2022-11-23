@@ -1,0 +1,25 @@
+.about-list {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.about__title {
+    @extend %primaryTitleFont;
+    margin: 20px 0;
+    @media screen and (max-width: 767px) {
+        width: 306px;
+    }
+}
+
+.about__text {
+    @extend %secondaryTextFont;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about__text-main {
+    @extend %primaryTextFont;
+    margin-top: 0;
+    margin-bottom: 40px;
+}

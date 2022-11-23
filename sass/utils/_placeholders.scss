@@ -20,6 +20,12 @@
     background-size: cover;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .container {
     padding: 0 15px;
     margin: 0 auto;

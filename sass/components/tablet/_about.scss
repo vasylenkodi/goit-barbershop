@@ -1,0 +1,28 @@
+.about__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.about-list {
+  @extend %list;
+}
+
+.about-list__item:not(:last-child) {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+
+.about__description {
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px) / 2);
+        margin-left: 30px;
+    }
+}
+
+.about__text-main {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 45px;
+  }
+}

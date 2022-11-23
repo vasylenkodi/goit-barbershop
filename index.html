@@ -74,7 +74,7 @@
     <!-- уникальный контент страницы -->
     <main>
       <!-- Секция герой -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <div class="hero__thumb">
             <p class="subtitle hero__subtitle">A hair salon for men in Kyiv</p>
@@ -106,38 +106,110 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- Секция о нас -->
-      <!-- <section class="about section">
-        <div class="container flex">
-          <ul class="about-list list">
-            <li>
-              <img
-                src="./images/image-about-1.jpg"
-                alt="a man is getting his beard shaved"
-                width="270"
-              />
+      <section class="about section">
+        <div class="container about__container">
+          <ul class="about-list">
+            <li class="about-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-image-1-desktop.webp    1x,
+                    ./images/about-image-1-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about-image-1-desktop.jpg    1x,
+                    ./images/about-image-1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/about-image-1-tablet.webp    1x,
+                    ./images/about-image-1-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about-image-1-tablet.jpg    1x,
+                    ./images/about-image-1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/about-image-1-tablet.jpg"
+                  alt="a man is getting his beard shaved"
+                  sizes="(min-width: 1200px) 270px, 330px"
+                />
+              </picture>
             </li>
-            <li>
-              <img src="./images/image-about-2.jpg" alt="a man is getting a haircut" width="270" />
+            <li class="about-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-image-2-desktop.webp    1x,
+                    ./images/about-image-2-desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about-image-2-desktop.jpg    1x,
+                    ./images/about-image-2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/about-image-2-tablet.webp    1x,
+                    ./images/about-image-2-tablet@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about-image-2-tablet.jpg    1x,
+                    ./images/about-image-2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/about-image-2-tablet.jpg"
+                  alt="a man is getting a haircut"
+                  sizes="(min-width: 1200px) 270px, 330px"
+                />
+              </picture>
             </li>
           </ul>
-          <div class="about-description">
-            <p class="subtitle primary">About</p>
-            <h2 class="title primary">Best Barbershop in your city</h2>
-            <p class="text">
+          <div class="about__description">
+            <p class="subtitle subtitle--primary">About</p>
+            <h2 class="about__title">Best Barbershop in your city</h2>
+            <p class="about__text">
               If you want to add more confidence to your image, you should definitely visit us.
             </p>
-            <p class="text secondary">
+            <p class="about__text-main">
               We are a team that never stops at what has been achieved and are thirsty for changes.
               And when you fall into the hands of our master, you will never be the same again. We
               are a team that is always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="button secondary">Online-booking</button>
+            <button type="button" class="button button--secondary">Online-booking</button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- Секция с прайслистом -->
       <!-- <section class="prices section">
         <div class="container">
