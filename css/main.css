@@ -702,7 +702,7 @@ img {
   left: 0;
   z-index: 2;
   width: 100%;
-  background-color: #ccc;
+  background-color: transparent;
   min-height: 136px;
   padding-top: 40px;
 }
