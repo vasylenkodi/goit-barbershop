@@ -1,0 +1,25 @@
+.features__container {
+    @media screen and (min-width: $desktop) {
+        padding-left: 115px;
+        padding-right: 85px;
+    }
+}
+
+.features-list {
+    @media screen and (min-width: $desktop) {
+        margin-right: 130px;
+        width: 37%;
+    }
+}
+
+.features-list__item {
+    @media screen and (min-width: $desktop) {
+        padding: 20px 20px;
+    }
+}
+
+.features__content {
+    @media screen and (min-width: $desktop) {
+        width: 50%;
+    }
+}

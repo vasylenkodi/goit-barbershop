@@ -24,6 +24,7 @@ $colors: (
   'price-list-bg-secondary-color-start': #090B13,
   'price-list-bg-secondary-color-end': rgba(9, 11, 19, 0.2),
   'price-list-pseudo-element-bg-color': rgba(157, 164, 189, 0.12),
+  'features-item-bg-color': #F7F7F7,
 );
 
 @function getColor($key) {
@@ -222,6 +223,34 @@ $timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.36;
     letter-spacing: 0.2em;
     color: getColor('secondary-text-color');
+}
+
+%featureNumberFont {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: getColor('secondary-text-color');
+}
+
+%featureFont {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: getColor('secondary-text-color');
+}
+
+%featureNumberPseudoElementFont {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+    text-align: center;
+    color: getColor('accent-color');
 }
 
 %cardNameFont {
