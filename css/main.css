@@ -494,7 +494,7 @@ summary {
   text-decoration: none;
 }
 
-.about-list, .barbers-cards-list, .features-list, .pricelist__list, .page-header__social-media-list, .site-navigation__list, .social-media-list, .barbers-card__social-medias-list {
+.about-list, .gallery__list, .barbers-cards-list, .features-list, .pricelist__list, .page-header__social-media-list, .site-navigation__list, .social-media-list, .barbers-card__social-medias-list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -1069,6 +1069,30 @@ img {
   margin-bottom: 44px;
 }
 
+@media screen and (max-width: 767px) {
+  .gallery__container {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.gallery__list {
+  margin-top: 71px;
+}
+@media screen and (max-width: 767px) {
+  .gallery__list {
+    max-width: 418px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -1303,6 +1327,24 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .gallery__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 44px;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .menu-container-backdrop {
     margin-left: 131px;
@@ -1468,5 +1510,18 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery__item {
+    width: calc((100% - 90px) / 4);
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,14 @@
+.gallery__list {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 44px;
+        gap: 30px;
+    }
+}
+
+.gallery__item {
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px)/2);
+    }
+}

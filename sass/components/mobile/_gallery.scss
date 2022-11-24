@@ -1,0 +1,25 @@
+.gallery__container {
+    @media screen and (max-width: 767px) {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+}
+
+.gallery__list {
+    @extend %list;
+    margin-top: 71px;
+    @media screen and (max-width: 767px) {
+        max-width: 418px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.gallery__item {
+}
+
+.gallery__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}
