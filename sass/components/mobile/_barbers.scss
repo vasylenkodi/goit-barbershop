@@ -1,0 +1,13 @@
+.barbers {
+    background-color: getColor('tertiary-bg-color');
+}
+
+.barbers__title {
+    @extend %secondaryTitleFont;
+    margin-top: 20px;
+    margin-bottom: 44px;
+}
+
+.barbers-cards-list {
+    @extend %list;
+}

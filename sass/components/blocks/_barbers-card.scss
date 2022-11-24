@@ -1,0 +1,61 @@
+.barbers-card {
+    width: 100%;
+    @media screen and (min-width: $tablet) {
+        width: 450px;
+    }
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 60px)/3);
+    }
+}
+
+.barbers-card:not(:last-child) {
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 64px;
+    }
+}
+
+.barbers-card__footer {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.barbers-card__name {
+    @extend %cardNameFont;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.barbers-card__description {
+    @extend %cardDescriptionFont;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.barbers-card__social-medias-list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.barbers-card__social-medias-item {
+    
+}
+
+.barbers-card__social-medias-link {
+    @extend %centered-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: getColor('primary-bg-color');
+    color: getColor('secondary-text-color');
+    transition: color 250ms $timingFunction;
+
+    &:hover, &:focus {
+        color: getColor('accent-color');
+    }
+}
+
+.barbers-card__icon {
+    fill: currentColor;
+}

@@ -1,0 +1,6 @@
+.barbers-cards-list {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
+}

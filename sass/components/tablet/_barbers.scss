@@ -1,0 +1,6 @@
+.barbers__container {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        padding-right: 135px;
+        padding-left: 135px;
+    }
+}
