@@ -37,3 +37,7 @@
 .social-media-list__link--hero {
     @extend %page-headerSocial-mediaFont;
 }
+
+.social-media-list__link--page-footer {
+  @extend %page-footerSocial-mediaFont;
+}

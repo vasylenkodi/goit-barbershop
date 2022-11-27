@@ -1,0 +1,18 @@
+.page-footer {
+    padding: 44px 0;
+}
+
+.page-footer__container {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+        align-items: flex-start;
+    }
+}
+
+.page-footer__copyright {
+    @extend %copyrightFont;
+    @media screen and (max-width: 767px) {
+        margin-top: 35px;
+    }
+}

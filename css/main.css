@@ -449,6 +449,15 @@ summary {
   }
 }
 
+.social-media-list__link--page-footer {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
 .features-list__number {
   font-family: "Open Sans";
   font-weight: 700;
@@ -578,6 +587,16 @@ summary {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.4);
+}
+
+.page-footer__copyright {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
 }
 
 .address__link, .page-header__contact, .site-navigation__link, .social-media-list__link {
@@ -1326,6 +1345,32 @@ img {
   margin-bottom: 0;
 }
 
+.page-footer {
+  padding: 44px 0;
+}
+
+.page-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .page-footer__container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-footer__copyright {
+    margin-top: 35px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -1649,6 +1694,12 @@ img {
 @media screen and (min-width: 768px) {
   .address__item:first-child {
     width: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer {
+    padding: 56px 0;
   }
 }
 
