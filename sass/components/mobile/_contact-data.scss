@@ -1,0 +1,42 @@
+.contacts-data {
+    @media screen and (max-width: 1199px) {
+        padding-top: 84px;
+    }
+}
+
+.contacts-data__title {
+    @extend %page-footerTitleFont;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.address {
+    margin-bottom: 44px;
+}
+
+.address__list {
+    @extend %list;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.address__link {
+    @extend %link;
+    font-style: normal;
+}
+
+.address__link--primary {
+    @extend %page-footerPrimaryFont;
+}
+
+.address__link--secondary {
+    @extend %page-footerSecondaryFont;
+}
+
+.contacts-data__text {
+    @extend %page-footerSecondaryFont;
+    margin-top: 20px;
+    margin-bottom: 0;
+}

@@ -1,0 +1,46 @@
+.contacts {
+    @media screen and (min-width: $tablet) {
+        background-position: center 521px;
+        background-image: url('../images/footer-background-image-tablet.png');
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: $tablet) {
+  .contacts {
+    background-image: url('../images/footer-background-image-tablet@2x.png');
+  }
+}
+
+.contact-form {
+    @media screen and (max-width: 1199px) and (min-width: $tablet) {
+        padding-bottom: 100px;
+    }
+}
+
+.contact-form__contact-group {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.contact-form__input {
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 30px)/2);
+    }
+}
+
+.contact-form__input:first-child {
+    @media screen and (min-width: $tablet) {
+        margin-right: 30px;
+    }
+}
+
+.contact-form__message-label {
+    @media screen and (min-width: $tablet) {
+        width: 100%;
+    }
+}

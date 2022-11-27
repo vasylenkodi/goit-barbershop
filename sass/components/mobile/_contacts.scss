@@ -1,0 +1,87 @@
+.contacts {
+    background-color: getColor('secondary-bg-color');
+    background-image: url('../images/footer-background-image-mobile.png');
+    background-position: center 557px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url('../images/footer-background-image-mobile@2x.png');
+  }
+}
+
+.contact-form {
+    @media screen and (max-width: 1199px) {
+        padding-bottom: 84px;
+    }
+}
+
+.contact-form__title {
+    @extend %page-footerTitleFont;
+    margin-top: 0;
+    margin-bottom: 44px;
+}
+
+.contact-form__contact-group {
+
+}
+
+.contact-form__input {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid getColor('input-color');
+    margin-bottom: 44px;
+    @extend %inputFont;
+    outline: none;
+    padding-bottom: 8px;
+
+    transition: color 250ms $timingFunction, border-color 250ms $timingFunction;
+
+    &:hover, &:focus {
+        color: getColor('page-footer-secondary-text-color');
+        border-color: getColor('page-footer-secondary-text-color');
+    }
+}
+
+.contact-form__input::placeholder {
+    @extend %inputFont;
+
+    transition: color 250ms $timingFunction;
+
+    &:hover, &:focus {
+        color: getColor('page-footer-secondary-text-color');
+    }
+}
+
+.contact-form__message-label {
+    @extend %inputFont;
+    margin-bottom: 44px;
+    display: block;
+}
+
+.contact-form__message {
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid getColor('input-color');
+    @extend %inputFont;
+    outline: none;
+    padding-bottom: 8px;
+    resize: none;
+
+    transition: color 250ms $timingFunction, border-color 250ms $timingFunction;
+
+    &:hover, &:focus {
+        color: getColor('page-footer-secondary-text-color');
+        border-color: getColor('page-footer-secondary-text-color');
+    }
+}

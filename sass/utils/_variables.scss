@@ -26,6 +26,8 @@ $colors: (
   'price-list-bg-secondary-color-end': rgba(9, 11, 19, 0.2),
   'price-list-pseudo-element-bg-color': rgba(157, 164, 189, 0.12),
   'features-item-bg-color': #F7F7F7,
+  'input-color': rgba(157, 164, 189, 0.4),
+  'page-footer-subtitle-pseudo-element-color': rgba(157, 164, 189, 0.4),
 );
 
 @function getColor($key) {
@@ -305,4 +307,12 @@ $timingFunction: cubic-bezier(0.4, 0, 0.2, 1);
     color: getColor('secondary-text-color');
 }
 
-
+%inputFont {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: getColor('input-color');
+}

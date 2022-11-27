@@ -1,0 +1,34 @@
+.contacts {
+    @media screen and (min-width: $desktop) {
+        background-position: 51vw center;
+        background-image: url('../images/footer-background-image-desktop.png');
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) and (min-width: $tablet) {
+  .contacts {
+    background-image: url('../images/footer-background-image-desktop@2x.png');
+  }
+}
+
+.section--contacts {
+    @media screen and (min-width: $desktop) {
+        padding-top: 130px;
+    }
+}
+
+.contacts__container {
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
+}
+
+.contact-form {
+    @media screen and (min-width: $desktop) {
+        width: 570px;
+        margin-right: 130px;
+    }
+}

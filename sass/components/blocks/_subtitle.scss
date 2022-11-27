@@ -23,3 +23,11 @@
 .subtitle--secondary {
     @extend %secondarySubtitleFont;
 }
+
+.contacts-data__subtitle {
+    @extend %page-footerSubtitleFont;
+}
+
+.contacts-data__subtitle::before {
+    background-color: getColor('page-footer-subtitle-pseudo-element-color');
+}

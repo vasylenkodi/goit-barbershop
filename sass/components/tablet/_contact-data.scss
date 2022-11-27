@@ -1,0 +1,25 @@
+.contacts-data {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        padding-top: 100px;
+    }
+}
+
+.contacts-data__main-information {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        display: flex;
+    }
+}
+
+.address {
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        width: 330px;
+        margin: 0;
+        margin-right: 30px;
+    }
+}
+
+.address__item:first-child {
+    @media screen and (min-width: $tablet) {
+        width: 200px;
+    }
+}

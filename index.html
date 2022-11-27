@@ -582,7 +582,7 @@
         </div>
       </section> -->
       <!-- Секция галерея -->
-      <section class="gallery section">
+      <!-- <section class="gallery section">
         <div class="container gallery__container">
           <h2 class="visually-hidden">Gallery</h2>
           <p class="subtitle subtitle--primary">In Latin, "barba" means "beard"</p>
@@ -817,47 +817,51 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Контактные данные -->
-      <!-- <section class="contacts">
-        <div class="container">
+      <section class="contacts section section--contacts">
+        <div class="container contacts__container">
           <form class="contact-form" name="booking">
-            <h2 class="title secondary" id="form-header">Online-booking</h2>
-            <div class="contact-group" aria-labelledby="form-header">
-              <input class="input" type="text" name="name" placeholder="Name*" />
-              <input class="input" type="tel" name="tel" placeholder="Phone*" />
-              <label class="message-label">
+            <h2 class="contact-form__title" id="form-header">Online-booking</h2>
+            <div class="contact-form__contact-group" aria-labelledby="form-header">
+              <input class="contact-form__input" type="text" name="name" placeholder="Name*" />
+              <input class="contact-form__input" type="tel" name="tel" placeholder="Phone*" />
+              <label class="contact-form__message-label">
                 Message
-                <textarea class="input message" name="message" rows="1"></textarea>
+                <textarea class="contact-form__message" name="message" rows="1"></textarea>
               </label>
-              <button type="submit" class="button primary">send</button>
+              <button type="submit" class="button button--primary contacts-form__button">Send</button>
             </div>
           </form>
-          <div class="contacts-information">
-            <h2 class="title secondary">Contacts</h2>
-            <address>
-              <ul class="list">
-                <li>
+          <div class="contacts-data">
+            <h2 class="contacts-data__title">Contacts</h2>
+            <div class="contacts-data__main-information">
+              <address class="address">
+              <ul class="address__list">
+                <li class="address__item">
                   <a
                     href="https://goo.gl/maps/bxQH1zRuzXtXM3hw7"
                     target="_blank"
                     rel="noopener nofollow noreferrer"
-                    class="address link"
-                    >st. Vasilkivska, 7A<br />
+                    class="address__link address__link--primary"
+                    >st. Vasilkivska, 7A
                     Kyiv, 08132</a
                   >
                 </li>
-                <li><a href="tel:+380441111111" class="link"> +38 044 111 11 11</a></li>
-                <li>
-                  <a href="mailto:barbershop@email.com" class="link email">barbershop@email.com</a>
+                <li class="address__item"><a href="tel:+380441111111" class="address__link address__link--secondary"> +38 044 111 11 11</a></li>
+                <li class="address__item">
+                  <a href="mailto:barbershop@email.com" class="address__link address__link--secondary">barbershop@email.com</a>
                 </li>
               </ul>
             </address>
-            <p class="subtitle">Working hours</p>
-            <p class="text">Every day from 9:00 to 22:00</p>
+            <div class="contacts-data__working-hours">
+              <p class="subtitle contacts-data__subtitle">Working hours</p>
+            <p class="contacts-data__text">Every day from 9:00 to 22:00</p>
+            </div>
+            </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- футер страницы -->
     <!-- <footer>
